@@ -1,0 +1,90 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "image": "https://d1ralsognjng37.cloudfront.net/2fe0cf7e-9b46-4d42-9714-6cdf2cad4ebb.jpeg",
+      "name": "Cheese burger",
+      "price": "20",
+      "number": 0
+    },
+    {
+      "id": 2,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 3,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 4,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 5,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 6,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 7,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 8,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 9,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    }
+  ],
+  "order": [
+    {
+      "id": 3,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    },
+    {
+      "id": 1,
+      "image": "https://d1ralsognjng37.cloudfront.net/2fe0cf7e-9b46-4d42-9714-6cdf2cad4ebb.jpeg",
+      "name": "Cheese burger",
+      "price": "20",
+      "number": 0
+    },
+    {
+      "id": 2,
+      "image": "",
+      "name": "json-statham",
+      "price": "25",
+      "number": 0
+    }
+  ]
+}

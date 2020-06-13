@@ -1,0 +1,31 @@
+.food-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 70px auto;
+  width: 90%;
+}
+.plate{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 350px;
+  height: 170px;
+  box-shadow: 0 0 10px gray;
+}
+.plate-details{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  width:40%;
+  height:80%;
+  align-self: center;
+}
+.order-button{
+  width: 50px;
+}
+.order-button{
+  align-self: flex-end;
+  margin-right: 20px;
+}
