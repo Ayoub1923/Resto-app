@@ -16,16 +16,26 @@
   font-weight: bold;
   font-size: 5em;
   font-style: oblique;
-  line-height: 150px;
+  line-height: 120px;
 }
 .buttons{
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 .sign-in, .sign-up{
-  height: 20px;
+  font-size: 1.2em;
   border: none;
   border-radius: 2px;
   margin-right: 10px;
   float: right;
   padding: 5px 10px;
+}
+.links{
+  font-size: 1.5em;
+  text-align: center;
+}
+.home{
+  margin-right: 20px;
+  text-decoration: none;
+  color: brown;
 }

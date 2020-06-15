@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-// import * as actionCreators from './actions/actions'
 import { move, add } from '../actions/actions'
 import './list.css'
 
@@ -16,7 +15,6 @@ class List extends Component {
           <div className="plate-details">
             <div>{el.name}</div>
             <div>{el.price}</div>
-            <div>{el.number}</div>
             <button onClick={() => this.props.ordered(el)} className="order-button">Order</button>
           </div>
         </div>

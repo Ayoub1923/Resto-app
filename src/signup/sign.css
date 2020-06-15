@@ -1,0 +1,46 @@
+.modal-content {
+  background-color: black !important;
+  border-radius: 20px !important;
+  text-align: center;
+}
+.sign {
+  color: white;
+  font-style: italic;
+}
+.text-right {
+  color: white;
+}
+.forgot-password {
+  color: rgb(239, 243, 17);
+  margin: 10px;
+  font-size: 1.3em;
+}
+.modal-box-sign {
+  background-color: rgba(6, 5, 56, 0.3) !important;
+}
+.model-body input {
+  margin-bottom: 10px;
+}
+.sign-inputs {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  border-top: 2px solid rgb(29, 74, 133);
+  width: 300px;
+  font-size: 1.2em;
+  padding-left: 10px;
+  color: antiquewhite;
+  outline: none;
+}
+.submit-sign {
+  margin: 10px 0 0 -200px;
+  background-color: #261b50;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px white;
+}
+.button-color{
+  background-color: cadetblue !important;
+  margin: 45px;
+}

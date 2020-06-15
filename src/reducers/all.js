@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux'
-import { foodMenu, ordered } from './reducers'
+import { foodMenu, ordered, totalCost, totalQuantity, user } from './reducers'
 const allReducers = combineReducers({
   foodMenu: foodMenu,
-  ordered: ordered
+  ordered: ordered,
+  totalQuantity: totalQuantity,
+  totalCost: totalCost,
+  users: user
 })
 export default allReducers;

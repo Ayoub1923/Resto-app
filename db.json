@@ -4,87 +4,83 @@
       "id": 1,
       "image": "https://d1ralsognjng37.cloudfront.net/2fe0cf7e-9b46-4d42-9714-6cdf2cad4ebb.jpeg",
       "name": "Cheese burger",
-      "price": "20",
-      "number": 0
+      "price": 20,
+      "number": 1
     },
     {
       "id": 2,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 3,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 4,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 5,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 6,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 7,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 8,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     },
     {
       "id": 9,
       "image": "",
       "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "price": 25,
+      "number": 1
     }
   ],
-  "order": [
+  "order": [],
+  "user": [
     {
-      "id": 3,
-      "image": "",
-      "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "nameUser": "ayoub",
+      "email": "ayoubmaazaouisimplon@gmail.com",
+      "password": "hello",
+      "id": 1
     },
     {
-      "id": 1,
-      "image": "https://d1ralsognjng37.cloudfront.net/2fe0cf7e-9b46-4d42-9714-6cdf2cad4ebb.jpeg",
-      "name": "Cheese burger",
-      "price": "20",
-      "number": 0
+      "password": "",
+      "id": 2
     },
     {
-      "id": 2,
-      "image": "",
-      "name": "json-statham",
-      "price": "25",
-      "number": 0
+      "nameUser": "ayoub",
+      "email": "shadow@gmail.com",
+      "password": "lol",
+      "id": 3
     }
   ]
 }
