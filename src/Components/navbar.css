@@ -4,19 +4,17 @@
 }
 .nav{
   display: flex;
-  color: white;
+  color: rgb(104, 24, 24);
   justify-content: space-between;
-  background-image: url("https://africanews27.com/wp-content/uploads/2018/11/hamburguesa-con-papas-fritas-e1542718639287.jpg");
-  background-size: 100% 100%;
-  height: 350px;
   width: 100%;
+  border-bottom: 1px solid rgb(88, 87, 87);
 }
 .logo{
   margin-left: 70px;
   font-weight: bold;
   font-size: 5em;
   font-style: oblique;
-  line-height: 120px;
+  line-height: 100px;
 }
 .buttons{
   margin-top: 50px;
@@ -33,9 +31,14 @@
 .links{
   font-size: 1.5em;
   text-align: center;
+line-height: 100px;
 }
 .home{
   margin-right: 20px;
   text-decoration: none;
   color: brown;
+}
+.home:hover{
+  text-decoration: none;
+  color: rgb(185, 95, 21);
 }

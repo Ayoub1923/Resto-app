@@ -1,3 +1,122 @@
+/* -----------------------------App component-------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(122, 122, 122rgb(158, 157, 157) 0));
+}
+/****************************Spinner***********************************/
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes ldio-5zibvzi9m5 {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+    left: 18px;
+    width: 156px;
+    height: 156px;
+    opacity: 0;
+  }
+}
+
+.ldio-5zibvzi9m5 div {
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ldio-5zibvzi9m5 1s cubic-bezier(0,0.2,0.8,1) infinite;
+}
+
+.ldio-5zibvzi9m5 div:nth-child(1) {
+  border-color: #ffffff
+}
+
+.ldio-5zibvzi9m5 div:nth-child(2) {
+  border-color: #07d5ec;
+  animation-delay: -0.5s;
+}
+
+.loadingio-spinner-ripple-xta2zmzew8 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-5zibvzi9m5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-5zibvzi9m5 div { box-sizing: content-box; }
+
+/*****************************Nav bar Secton***************************/
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  background-color: #01121b;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgb(134, 120, 120);
+}
+.logo {
+  color: white;
+  font-size: 3em;
+  font-family: "Engagement", cursive;
+}
+.starfield {
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-top: 17px;
+}
+.routes {
+  margin-right: 30px;
+  color: #a4b3b6;
+  font-size: 1.4em;
+}
+.routes:hover {
+  color: white;
+  text-decoration: none;
+}
+.input {
+  padding: 5px 10px;
+  outline: none;
+  font-size: 1.3em;
+  border: none;
+  height: 30px;
+}
+.search-bar {
+  height: 40px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(161, 156, 156);
+}
+.button-color {
+  background-color: rgb(139, 0, 42) !important;
+}
+/***************************Signin/Signup Section***************************************/
 .modal-content {
   background-color: black !important;
   border-radius: 20px !important;
@@ -15,6 +134,7 @@
   margin: 10px;
   font-size: 1.3em;
 }
+/*-------------------------list component----------------------------*/
 .modal-box-sign {
   background-color: rgba(6, 5, 56, 0.3) !important;
 }
@@ -40,7 +160,10 @@
   font-size: 1.2em;
   box-shadow: 0 0 10px white;
 }
-.button-color{
-  background-color: cadetblue !important;
-  margin: 45px;
+
+.signinputs{
+  display: flex;
+  flex-direction: column;
+  width:48%;
+  margin: auto;
 }

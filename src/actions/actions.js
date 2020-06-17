@@ -13,6 +13,18 @@ export function change(item) {
     item
   }
 }
+export function addToMainList(el) {
+  return () => {
+    axios.post(`http://localhost:3000/posts/`, el).then(response => console.log(response.data))
+    window.location.reload()
+  }
+}
+export function deleteFromMainList(el) {
+  return () => {
+    axios.delete(`http://localhost:3000/posts/${el.id}`).then(response => console.log(response.data))
+    window.location.reload()
+  }
+}
 export function add(el) {
   return () => {
     axios.post("http://localhost:3000/order", el).then(response => {
@@ -35,7 +47,7 @@ export function chosen(item) {
 }
 export function deleteItem(el) {
   return () => {
-    axios.delete(`http://localhost:3000/order/${el.id}`)
+    axios.delete(`http://localhost:3000/order/${el.id}`).then(response => console.log(response.data))
     window.location.reload()
   }
 }
@@ -61,19 +73,6 @@ export function quantifyDown(el, id) {
 export const register = (el) => {
   return axios.post('http://localhost:3000/user', el)
 }
-export function sum() {
-  return (dispatch) => {
-    axios.get("http://localhost:3000/order").then(response => {
-      dispatch(addition(response.data))
-    })
-  }
-}
-export function addition(item) {
-  return {
-    type: "addition",
-    item
-  }
-}
 export function utilisateurs() {
   return (dispatch) => {
     axios.get("http://localhost:3000/user").then(response => {
@@ -82,9 +81,28 @@ export function utilisateurs() {
   }
 }
 export function user(item) {
-  console.log(item)
   return {
     type: "user",
     item
   }
-} 
+}
+/*************************get load***************************** */
+export function importLoad() {
+  return (dispatch) => {
+    axios.get("http://localhost:3000/load").then(response => {
+      dispatch(getLoad(response.data))
+    })
+  }
+}
+export function getLoad(payload) {
+  return {
+    type: "getLoad",
+    payload
+  }
+}
+/************************patch loadstatus**************************/
+export function changeLoad(data) {
+  return () => {
+    axios.patch(`http://localhost:3000/load/1`, { loadstatus: data }).then(res => console.log(res))
+  }
+}
