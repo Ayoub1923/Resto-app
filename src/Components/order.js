@@ -43,8 +43,8 @@ class Order extends Component {
                   <div>{el.number}</div>
                   <div className="amount">
                     <label>Quantity:</label>
-                    <button onClick={() => this.props.up(el, el.id)}>up</button>
-                    <button onClick={() => this.props.down(el, el.id)}>down</button>
+                    <button onClick={() => this.props.up(el, el.id)}>+</button>
+                    <button onClick={() => this.props.down(el, el.id)}>-</button>
                   </div>
                   <div><i onClick={() => this.props.delete(el)} className="fa fa-trash" ></i></div>
                 </div>

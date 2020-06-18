@@ -32,6 +32,18 @@ export function add(el) {
     })
   }
 }
+export function editItem(el, name, price) {
+  return () => {
+    axios.patch(`http://localhost:3000/posts/${el.id}`, {
+      "id": el.id,
+      "image": el.image,
+      "name": name,
+      "price": price,
+      "number": el.number
+    }).then(res => console.log(res),
+      window.location.reload())
+  }
+}
 export function myOrder() {
   return (dispatch) => {
     axios.get("http://localhost:3000/order").then(response => {

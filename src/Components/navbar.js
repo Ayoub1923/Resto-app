@@ -10,7 +10,7 @@ class Navbar extends Component {
 
     return (
       <div className='nav'>
-        <div className='logo'>Burga's</div>
+        <div className='logoo'>Burga's</div>
         <div className="links">
           <Link to="/" className="home">Home</Link>
           <Link to="/list" className="home">Our burgers</Link>

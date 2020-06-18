@@ -1,17 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { move, add, importLoad, deleteFromMainList, addToMainList } from '../actions/actions'
+import { move, add, importLoad, deleteFromMainList, addToMainList, editItem } from '../actions/actions'
 import Navbar from './navbar'
 import './list.css'
 class List extends Component {
   state = {
     image: "",
     name: "",
-    price: ""
+    price: "",
+    display: "block",
+    editName: "",
+    editPrice: "",
+    el: {}
   }
   componentDidMount() {
     this.props.displayFood()
     this.props.importLoad()
+  }
+  toggle = () => { this.setState({ display: "block" }) }
+  removeModal = () => {
+    this.setState({ display: "none" })
+    this.props.editItem(this.state.el, this.state.editName, this.state.editPrice)
   }
   addOrder = (el) => {
     const a = this.props.loadList.map(el => el.loadstatus).join('')
@@ -35,7 +44,7 @@ class List extends Component {
                 <div>{el.price} DT</div>
                 <button onClick={() =>
                   this.addOrder(el)
-                } className="order-button">Order</button>
+                } className="order-button">Crave</button>
               </div>
             </div>
             )
@@ -54,6 +63,11 @@ class List extends Component {
                 "price": this.state.price,
               })} className="fa fa-plus" ></i></div>
             </div>
+            <div style={{ display: this.state.display }} className='edit-modal'>
+              <input onChange={(e) => this.state.editName = e.target.value} placeholder="name"></input> <br></br>
+              <input onChange={(e) => this.state.editPrice = e.target.value} placeholder="price"></input><br></br>
+              <button onClick={this.removeModal}>submit</button>
+            </div>
             <div className="food-list">
               {this.props.foodList.map(el => <div key={el.id} className='plate'>
                 <img width="50%" height="100%" src={el.image} alt={el.name}></img>
@@ -61,6 +75,8 @@ class List extends Component {
                   <div>{el.name}</div>
                   <div>{el.price} DT</div>
                   <div><i onClick={() => this.props.delete(el)} className="fa fa-trash" ></i></div>
+                  <div className="fa fa-edit" onClick={() => this.state.el = el
+                  }></div>
                 </div>
               </div>
               )
@@ -81,6 +97,7 @@ const actionCreators = (dispatch) => ({
   displayFood: () => dispatch(move()),
   ordered: (el) => dispatch(add(el)),
   delete: (el) => dispatch(deleteFromMainList(el)),
-  add: (el) => dispatch(addToMainList(el))
+  add: (el) => dispatch(addToMainList(el)),
+  editItem: (el, name, price) => dispatch(editItem(el, name, price))
 })
 export default connect(mapStateToProps, actionCreators)(List)

@@ -1,5 +1,6 @@
 .landing{
   display: flex;
+  flex-wrap: wrap;
   color: rgb(243, 33, 18);
   justify-content: space-between;
   background-image: url("https://images6.alphacoders.com/101/thumb-1920-1016894.jpg");
@@ -41,7 +42,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  width: 30%;
+  min-width: 300px;
+  width: 400px;
   height: 170px;
   box-shadow: 0 0 10px gray;
 }
